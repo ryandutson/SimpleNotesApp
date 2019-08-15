@@ -14,6 +14,7 @@
 		777460542305F2DE00A7631C /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460532305F2DE00A7631C /* NotesTableViewController.swift */; };
 		777460562305F65900A7631C /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460552305F65900A7631C /* AddNoteViewController.swift */; };
 		777460582305FAD900A7631C /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460572305FAD900A7631C /* NoteDetailViewController.swift */; };
+		7774605A2305FC0D00A7631C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460592305FC0D00A7631C /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		777460532305F2DE00A7631C /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		777460552305F65900A7631C /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		777460572305FAD900A7631C /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		777460592305FC0D00A7631C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				777460482305EFAE00A7631C /* Assets.xcassets */,
 				7774604A2305EFAE00A7631C /* LaunchScreen.storyboard */,
 				7774604D2305EFAE00A7631C /* Info.plist */,
+				777460592305FC0D00A7631C /* Note.swift */,
 				777460572305FAD900A7631C /* NoteDetailViewController.swift */,
 				777460532305F2DE00A7631C /* NotesTableViewController.swift */,
 			);
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7774605A2305FC0D00A7631C /* Note.swift in Sources */,
 				777460422305EFAA00A7631C /* AppDelegate.swift in Sources */,
 				777460582305FAD900A7631C /* NoteDetailViewController.swift in Sources */,
 				777460542305F2DE00A7631C /* NotesTableViewController.swift in Sources */,
