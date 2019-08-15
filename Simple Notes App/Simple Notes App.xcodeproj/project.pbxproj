@@ -15,6 +15,8 @@
 		777460562305F65900A7631C /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460552305F65900A7631C /* AddNoteViewController.swift */; };
 		777460582305FAD900A7631C /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460572305FAD900A7631C /* NoteDetailViewController.swift */; };
 		7774605A2305FC0D00A7631C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777460592305FC0D00A7631C /* Note.swift */; };
+		7774605C2306008C00A7631C /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774605B2306008C00A7631C /* NoteController.swift */; };
+		77A9010E2306139A00C537B9 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A9010D2306139900C537B9 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		777460552305F65900A7631C /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		777460572305FAD900A7631C /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		777460592305FC0D00A7631C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7774605B2306008C00A7631C /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		77A9010D2306139900C537B9 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				777460412305EFAA00A7631C /* AppDelegate.swift */,
-				777460552305F65900A7631C /* AddNoteViewController.swift */,
 				777460452305EFAA00A7631C /* Main.storyboard */,
+				77A9010D2306139900C537B9 /* NoteTableViewCell.swift */,
+				777460572305FAD900A7631C /* NoteDetailViewController.swift */,
 				777460482305EFAE00A7631C /* Assets.xcassets */,
 				7774604A2305EFAE00A7631C /* LaunchScreen.storyboard */,
 				7774604D2305EFAE00A7631C /* Info.plist */,
-				777460592305FC0D00A7631C /* Note.swift */,
-				777460572305FAD900A7631C /* NoteDetailViewController.swift */,
 				777460532305F2DE00A7631C /* NotesTableViewController.swift */,
+				777460552305F65900A7631C /* AddNoteViewController.swift */,
+				777460592305FC0D00A7631C /* Note.swift */,
+				7774605B2306008C00A7631C /* NoteController.swift */,
 			);
 			path = "Simple Notes App";
 			sourceTree = "<group>";
@@ -145,9 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7774605A2305FC0D00A7631C /* Note.swift in Sources */,
+				7774605C2306008C00A7631C /* NoteController.swift in Sources */,
 				777460422305EFAA00A7631C /* AppDelegate.swift in Sources */,
 				777460582305FAD900A7631C /* NoteDetailViewController.swift in Sources */,
 				777460542305F2DE00A7631C /* NotesTableViewController.swift in Sources */,
+				77A9010E2306139A00C537B9 /* NoteTableViewCell.swift in Sources */,
 				777460562305F65900A7631C /* AddNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

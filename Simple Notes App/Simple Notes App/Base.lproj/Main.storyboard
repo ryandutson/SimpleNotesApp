@@ -19,23 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" textLabel="aGQ-8h-ra1" style="IBUITableViewCellStyleDefault" id="dRr-8j-7I6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" id="dRr-8j-7I6" customClass="NoteTableViewCell" customModule="Simple_Notes_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dRr-8j-7I6" id="RZH-NJ-PFj">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dRr-8j-7I6" id="RZH-NJ-PFj" customClass="NoteTableViewCell" customModule="Simple_Notes_App" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aGQ-8h-ra1">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnW-S8-x5N">
+                                            <rect key="frame" x="20" y="11.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-2n-bMS">
+                                            <rect key="frame" x="312" y="7" width="82" height="30"/>
+                                            <state key="normal" title="Not Studied"/>
+                                            <connections>
+                                                <action selector="studiedButtonPressed:" destination="dRr-8j-7I6" eventType="touchUpInside" id="Atc-0Q-m0B"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Sa5-2n-bMS" firstAttribute="centerY" secondItem="RZH-NJ-PFj" secondAttribute="centerY" id="KXr-sZ-2Y1"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Sa5-2n-bMS" secondAttribute="trailing" id="LcH-DX-yvS"/>
+                                        <constraint firstItem="JnW-S8-x5N" firstAttribute="leading" secondItem="RZH-NJ-PFj" secondAttribute="leadingMargin" id="cXD-ag-42D"/>
+                                        <constraint firstItem="JnW-S8-x5N" firstAttribute="centerY" secondItem="RZH-NJ-PFj" secondAttribute="centerY" id="k1A-cB-CRX"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="labelCell" destination="JnW-S8-x5N" id="iY2-Bv-kGt"/>
+                                    <outlet property="studyButton" destination="Sa5-2n-bMS" id="jHE-BR-bWK"/>
                                     <segue destination="aKz-Xa-Dw7" kind="show" identifier="NoteDetailSegue" id="sZv-U3-5sV"/>
                                 </connections>
                             </tableViewCell>
